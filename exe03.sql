@@ -40,4 +40,17 @@ SELECT * FROM tb_estudantes WHERE Nota = 7.00;
 UPDATE tb_estudantes SET Nota = 4.00 WHERE Id = 4;
 UPDATE tb_estudantes SET Nota = 5.00 WHERE Id = 7;
 
-select * from tb_estudantes;
+ALTER TABLE tb_estudantes MODIFY DataProva date;
+UPDATE tb_estudantes SET DataProva = "2024-03-04" WHERE Id = 1;
+UPDATE tb_estudantes SET DataProva = "2024-03-04" WHERE Id = 3;
+UPDATE tb_estudantes SET DataProva = "2024-03-04" WHERE Id = 6;
+UPDATE tb_estudantes SET DataProva = "2024-03-04" WHERE Id = 7;
+UPDATE tb_estudantes SET DataProva = "2024-03-04" WHERE Id = 8;
+UPDATE tb_estudantes SET DataProva = "2024-03-05" WHERE Id = 2;
+UPDATE tb_estudantes SET DataProva = "2024-03-05" WHERE Id = 4;
+UPDATE tb_estudantes SET DataProva = "2024-03-05" WHERE Id = 5;
+UPDATE tb_estudantes SET DataProva = "2024-03-05" WHERE Id = 9;
+UPDATE tb_estudantes SET DataProva = "2024-03-05" WHERE Id = 10;
+
+SELECT * FROM tb_estudantes ORDER BY Nome, Nota ASC;
+
